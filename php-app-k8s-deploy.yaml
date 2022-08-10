@@ -15,7 +15,7 @@ spec:
       labels:
         app: php
     spec:
-      serviceAccountName: app
+      serviceAccountName: devsecops-app
       containers:
       - image: vault-app:php
         name: php
@@ -38,6 +38,6 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: app
+  name: devsecops-app
   labels:
     app: php
